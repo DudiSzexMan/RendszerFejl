@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    Redmine
+    <b>Redmine</b>
     <meta charset= "utf-8">
 </head>
 <body>
+    <br>
     <br>
     A fejlesztendő prototípus a projektek kezelésére nyújt támogatást a menedzserek számára, amely
     során a következő funkciók megvalósítása szükséges: 
