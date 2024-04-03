@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; // CSS fájl importálása
+import './components/LoginForm.css'; // CSS fájl importálása
 
 function App() {
   const [managerActive, setManagerActive] = useState(false);
