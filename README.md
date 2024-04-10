@@ -7,7 +7,8 @@
 <body>
 
 <h1>Bevezetés</h1>
-<p>Ez a dokumentáció a React alapú bejelentkezési oldal működését és felépítését írja le. Az oldal egy felhasználóbarát felületet biztosít a felhasználók számára, hogy bejelentkezhessenek vagy regisztráljanak, és egyéb funkciókat használhassanak.</p>
+<p>Ez a dokumentáció a React alapú bejelentkezési oldal működését és felépítését írja le. Az oldal egy felhasználóbarát felületet biztosít a felhasználók számára, hogy bejelentkezhessenek és egyéb funkciókat használhassanak. A projekt fejlesztéséhez a VSCode fejlesztői környezetet és a Node.js környezetet használtuk.</p>
+
 
 <h2>Telepítés és Futtatás</h2>
 <ol>
