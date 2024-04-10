@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import './components/LoginForm.css'; // CSS fájl importálása
+import './components/LoginForm.css';
+import ManagerPage from './ManagerPage'; // ManagerPage importálása
+import DeveloperPage from './DeveloperPage'; // DeveloperPage importálása
 
 function App() {
   const [managerActive, setManagerActive] = useState(false);
@@ -18,32 +20,26 @@ function App() {
   };
 
   return (
-    <div className="container">
-      {!managerActive && !developerActive && (
-        <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" />
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" />
-          <label htmlFor="password">Password:</label>
-          <input type="password" id="password" />
-          <button onClick={handleManagerSubmit}>Manager Login</button>
-          <button onClick={handleDeveloperSubmit}>Developer Login</button>
-        </div>
-      )}
-      {managerActive && (
-        <div>
-          <h2>Manager Page</h2>
-          {/* Itt jelenítsd meg a Manager lap tartalmát */}
-        </div>
-      )}
-      {developerActive && (
-        <div>
-          <h2>Developer Page</h2>
-          {/* Itt jelenítsd meg a Developer lap tartalmát */}
-        </div>
-      )}
-    </div>
+    React.createElement('div', { className: 'container' },
+      !managerActive && !developerActive && (
+        React.createElement('div', { className: 'form-group' },
+          React.createElement('label', { htmlFor: 'name' }, 'Name:'),
+          React.createElement('input', { type: 'text', id: 'name' }),
+          React.createElement('label', { htmlFor: 'email' }, 'Email:'),
+          React.createElement('input', { type: 'email', id: 'email' }),
+          React.createElement('label', { htmlFor: 'password' }, 'Password:'),
+          React.createElement('input', { type: 'password', id: 'password' }),
+          React.createElement('button', { onClick: handleManagerSubmit }, 'Manager Login'),
+          React.createElement('button', { onClick: handleDeveloperSubmit }, 'Developer Login')
+        )
+      ),
+      managerActive && (
+        React.createElement(ManagerPage, null) /* ManagerPage komponens megjelenítése */
+      ),
+      developerActive && (
+        React.createElement(DeveloperPage, null) /* DeveloperPage komponens megjelenítése */
+      )
+    )
   );
 }
 
