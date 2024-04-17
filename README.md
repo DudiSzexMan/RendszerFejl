@@ -15,6 +15,7 @@
   <li>Klónozd le a projektet a GitHub repositoryból vagy más forrásból.</li>
   <li>Nyisd meg a projekt könyvtárát a VSCode-ban.</li>
   <li>Telepítsd a szükséges függőségeket a <code>npm install</code> parancs kiadásával a terminálban.</li>
+  <li>Szükséges packagek a futtatáshoz: <code>npm install axios</code> és <code>npm intall firebase</code></li>
   <li>Futtasd az alkalmazást a <code>npm start</code> parancs kiadásával.</li>
   <li>Az alkalmazás most elérhető lesz a böngésződben a <code>http://localhost:3000</code> címen.</li>
 </ol>
