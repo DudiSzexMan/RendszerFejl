@@ -7,7 +7,7 @@
 <body>
 
 <h1>Bevezetés</h1>
-<p>Ez a dokumentáció a React alapú bejelentkezési oldal működését és felépítését írja le. Az oldal egy felhasználóbarát felületet biztosít a felhasználók számára, hogy bejelentkezhessenek és egyéb funkciókat használhassanak. A projekt fejlesztéséhez a VSCode fejlesztői környezetet és a Node.js környezetet használtuk.</p>
+<p>Ez a dokumentáció a React alapú bejelentkezési oldal működését és felépítését írja le. Az oldal egy felhasználóbarát felületet biztosít a felhasználók számára, hogy bejelentkezhessenek és egyéb funkciókat használhassanak. A projekt fejlesztéséhez a VSCode fejlesztői környezetet és a Node.js környezetet használtuk. Adatbázishoz a Firebase realtime database szolgáltatását vettük igénybe</p>
 
 
 <h2>Telepítés és Futtatás</h2>
@@ -26,3 +26,4 @@
   <li><strong>Bejelentkezés:</strong> A felhasználók megadhatják a nevüket, email címüket és jelszavukat a bejelentkezéshez. A "Manager Login" és "Developer Login" gombokkal kiválaszthatják a megfelelő bejelentkezési típust.</li>
   <li><strong>Manager Tasks Megjelenítése:</strong> A Manager felhasználók bejelentkezés után megtekinthetik a Manager feladatokat, amelyek egy táblázatban jelennek meg. Minden feladathoz tartozik egyedi azonosító, név, leírás, projekt azonosító, felhasználó azonosító és határidő.</li>
   <li><strong>Fejlett CSS Stílusok</strong>
+  <li><strong>Realtime Firebase Database tárolja a bejelentkezési adatokat</strong>
