@@ -24,4 +24,4 @@
 <ol>
   <li><strong>Bejelentkezés:</strong> A felhasználók megadhatják a nevüket, email címüket és jelszavukat a bejelentkezéshez. A "Manager Login" és "Developer Login" gombokkal kiválaszthatják a megfelelő bejelentkezési típust.</li>
   <li><strong>Manager Tasks Megjelenítése:</strong> A Manager felhasználók bejelentkezés után megtekinthetik a Manager feladatokat, amelyek egy táblázatban jelennek meg. Minden feladathoz tartozik egyedi azonosító, név, leírás, projekt azonosító, felhasználó azonosító és határidő.</li>
-  <li><strong>Fejlett CSS Stílusok:</strong> Az oldal felhasználja a CSS-et a vonzó és felhasználóbarát
+  <li><strong>Fejlett CSS Stílusok</strong>
