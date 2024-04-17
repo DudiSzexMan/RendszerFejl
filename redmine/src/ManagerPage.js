@@ -9,7 +9,6 @@ function ManagerPage() {
 
   // Az adatok lekérdezése az adatbázisból
   useEffect(() => {
-    // Menedzserek lekérése
     axios.get('/api/managers')
       .then(response => {
         setManagers(response.data);
@@ -18,7 +17,6 @@ function ManagerPage() {
         console.error('Error fetching managers:', error);
       });
 
-    // Feladatok lekérése
     axios.get('/api/tasks')
       .then(response => {
         setTasks(response.data);
