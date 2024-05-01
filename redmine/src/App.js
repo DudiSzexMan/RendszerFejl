@@ -28,8 +28,8 @@ function App() {
     e.preventDefault();
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    addDeveloperToDatabase(name, email, password)
+    //const password = document.getElementById('password').value;
+    addDeveloperToDatabase(name, email)
       .then(() => {
         console.log('Developer added to database successfully');
       })

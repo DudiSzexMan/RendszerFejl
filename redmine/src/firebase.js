@@ -34,7 +34,7 @@ export const addManagerToDatabase = (name, email, password) => {
 };
 
 // Developerhez hozzáadása az adatbázishoz
-export const addDeveloperToDatabase = (name, email, password) => {
+export const addDeveloperToDatabase = (name, email) => {
   // Új egyedi azonosító generálása
   const developerId = database.ref('/developers').push().key;
 
@@ -42,8 +42,7 @@ export const addDeveloperToDatabase = (name, email, password) => {
   const developerData = {
     id: developerId,
     name: name,
-    email: email,
-    password: password
+    email: email
     // További adatok hozzáadása szükség szerint
   };
 
