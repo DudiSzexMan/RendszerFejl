@@ -1,0 +1,43 @@
+<div class="container mt-1">
+    <div class="card">
+        <a routerLink="/" class="btn btn-primary">Vissza</a>
+        <div class="card-body">
+            <h2 class="card-title">{{project.name}}</h2>
+            <div class="card-text">
+                <h4>Tipus: </h4><p class="type">{{project.type.name}}</p>
+                <h4>Leírás: </h4><p class="desc">{{project.description}}</p>
+            </div>
+        </div>
+        <form class="w-50 m-2" [formGroup]="createForm" (ngSubmit)="createTask()">
+            <h2>Új feladat létrehozása</h2>
+            <div class="form-group">
+                <label for="taskName">Név</label>
+                <input type="text" class="form-control" id="taskName" placeholder="Név" formControlName="name">
+            </div>
+            <div class="form-group">
+                <label for="taskdescription">Leírás</label>
+                <input type="text" class="form-control" id="taskdescription" placeholder="Leírás" formControlName="description">
+            </div>
+            <div class="form-group">
+                <label for="taskdeadline">Határidő</label>
+                <input type="datetime-local" class="form-control" id="taskdeadline" placeholder="Határidő" formControlName="deadline">
+              </div>
+            <button type="submit" class="btn btn-primary">Létrehozás</button>
+          </form>
+        <div class="container">
+            <h3>Feladatok:</h3>
+            <input type="button" class="btn btn-dark m-1" (click)="filterByOwn()" value="Sajátok listázása">
+            <input type="button" class="btn btn-dark m-1" (click)="showAll()" value="Összes listázása">
+            <div class="card m-3 w-50 " *ngFor="let task of showingTasks">
+                <div class="card-body">
+                    <h3 class="card-title">{{task.name}}</h3>
+                    <div class="card-text">
+                        Leírás: <p class="desc">{{task.description}}</p>
+                        Határidő: <p class="type">{{task.deadline}}</p>
+                        Létrehozó: <p>{{task.manager.email}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
